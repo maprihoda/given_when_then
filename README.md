@@ -21,7 +21,7 @@ If you'd love to use the Cucumber Given-When-Then mantra in your Rspec tests, ju
       Given 'there is a guest user' do
         let(:user) { stub('user', :name => 'Mr XY', :email => 'xy@example.com', :password => 'secret' ) }
 
-        When 'he goes the home page' do
+        When 'he goes to the home page' do
           before { visit root_path }
 
           Then 'he should see the navigational links' do
