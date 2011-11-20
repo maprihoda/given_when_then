@@ -1,5 +1,4 @@
 require "rspec/core"
-require "given_when_then/version"
 
 module GivenWhenThen
 
