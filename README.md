@@ -5,17 +5,21 @@ Use selected Cucumber-like syntax in your Rspec tests.
 
 ## Installation
 
-In your Gemfile:
+In your Gemfile, under the test group, specify:
 
     group :test do
       gem 'given_when_then'
       # ...
     end
 
+And install with
+
+    bundle
+
 
 ## Example Usage
 
-If you'd love to use the Cucumber Given-When-Then mantra in your Rspec tests, just use it in place of the describe/it method calls like in this integration test:
+If you'd love to use the BDD Given-When-Then mantra in your Rspec tests, just use it in place of the describe/it method calls like in this sample integration test:
 
     describe 'Signing up' do
       Given 'there is a guest user' do
@@ -68,7 +72,7 @@ If you'd love to use the Cucumber Given-When-Then mantra in your Rspec tests, ju
     end
 
 
-When you run the test with -fs, then in case of success you get a nicely formatted output:
+When you run the test with the -fs option, then in the case of success you get'll a nicely formatted output:
 
     Signing up
       Given there is a guest user
