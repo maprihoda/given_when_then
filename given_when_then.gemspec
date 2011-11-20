@@ -17,5 +17,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency "rspec-core"
+  s.add_development_dependency "rspec"
 end
 
